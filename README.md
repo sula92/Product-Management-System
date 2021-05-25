@@ -29,6 +29,7 @@ This project depends on [here](pom.xml).Make sure to add them  to your module's 
 - [x] [Java 1.8](https://www.oracle.com/java/technologies/javase/javase-jdk8-downloads.html)
 - [x] [Maven 3](https://maven.apache.org/)
 - [x] [MySQL](https://www.mysql.com/downloads/)
+- [x] [PostMan](https://www.postman.com/downloads/)
 
 ####  What should I need to do with this project?
  
@@ -61,6 +62,7 @@ Please Follow below steps to run the project.
 
 - [x] In order to run the project you must have an ide like intellij, eclipse or netbeans in your pc. You can download eclipse & netbeans for free and you can buy the intellij enterprise edition from their official site.
 - [x] Now Implort the project to the ide.
+- [x] Replace the default Database User Name and password given in the application.properties by yours Database user name and password.
 - [x] Run the Project as a SpringBoot Application.
 - [x] Use the installed rest client in order to send the REST Requests and to do the crud operations.
  

@@ -4,6 +4,9 @@ import javax.persistence.*;
 import javax.validation.constraints.Size;
 import java.util.List;
 
+/**
+ * Represents Product Category details.\n@author sula
+ */
 @Entity
 @Table(name = "product_category")
 public class ProductCategory {
@@ -17,8 +20,8 @@ public class ProductCategory {
     @Column(length = 500)
     @Size(max = 500)
     private String description;
-    @OneToMany(mappedBy = "productCategory")
-    private List<Product> products;
+    /*@OneToMany(mappedBy = "productCategory")
+    private List<Product> products;*/
 
     public ProductCategory() {
     }
@@ -33,7 +36,7 @@ public class ProductCategory {
         this.productCategoryId = productCategoryId;
         this.name = name;
         this.description = description;
-        this.products = products;
+        //this.products = products;
     }
 
     public int getProductCategoryId() {
@@ -60,14 +63,14 @@ public class ProductCategory {
         this.description = description;
     }
 
-    public List<Product> getProducts() {
+    /*public List<Product> getProducts() {
         return products;
     }
 
     public void setProducts(List<Product> products) {
         this.products = products;
     }
-
+*/
     @Override
     public String toString() {
         return "ProductCategory{" +

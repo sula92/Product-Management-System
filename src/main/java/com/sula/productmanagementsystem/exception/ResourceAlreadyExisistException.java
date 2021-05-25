@@ -1,11 +1,10 @@
 package com.sula.productmanagementsystem.exception;
 
 import org.springframework.http.HttpStatus;
-import org.springframework.web.bind.annotation.ResponseStatus;
 
-public class ResourceNotFoundException extends RuntimeException {
+public class ResourceAlreadyExisistException extends RuntimeException{
 
-    public ResourceNotFoundException(String message) {
+    public ResourceAlreadyExisistException(String message) {
         super(message);
     }
 
@@ -16,7 +15,7 @@ public class ResourceNotFoundException extends RuntimeException {
     }
 
 
-    public ResourceNotFoundException(HttpStatus httpStatus, String message) {
+    public ResourceAlreadyExisistException(HttpStatus httpStatus, String message) {
         super(message);
         this.httpStatus = httpStatus;
     }

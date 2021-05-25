@@ -7,6 +7,9 @@ import javax.validation.constraints.Size;
 import java.sql.Date;
 import java.util.List;
 
+/**
+ * Represents product details.\n@author sula
+ */
 @Entity
 public class Product {
 
@@ -30,8 +33,8 @@ public class Product {
     private Status status;
     @Column(name = "launched_date")
     private Date launchDate;
-    @OneToMany(mappedBy = "product")
-    private List<ProductComment> productComments;
+   /* @OneToMany(mappedBy = "product")
+    private List<ProductComment> productComments;*/
 
     public Product() {
     }
@@ -54,7 +57,7 @@ public class Product {
         this.productCategory = productCategory;
         this.status = status;
         this.launchDate = launchDate;
-        this.productComments = productComments;
+        //this.productComments = productComments;
     }
 
     public int getProductId() {
@@ -113,13 +116,13 @@ public class Product {
         this.launchDate = launchDate;
     }
 
-    public List<ProductComment> getProductComments() {
+   /* public List<ProductComment> getProductComments() {
         return productComments;
-    }
+    }*/
 
-    public void setProductComments(List<ProductComment> productComments) {
+   /* public void setProductComments(List<ProductComment> productComments) {
         this.productComments = productComments;
-    }
+    }*/
 
     @Override
     public String toString() {

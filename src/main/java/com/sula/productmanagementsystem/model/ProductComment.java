@@ -5,6 +5,9 @@ import javax.validation.constraints.Size;
 import java.sql.Timestamp;
 import java.util.Date;
 
+/**
+ * Represents Product Comment details.\n@author sula
+ */
 @Entity
 @Table(name = "product_comment")
 public class ProductComment {

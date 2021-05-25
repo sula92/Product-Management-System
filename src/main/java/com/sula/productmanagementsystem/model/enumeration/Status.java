@@ -1,5 +1,8 @@
 package com.sula.productmanagementsystem.model.enumeration;
 
+/**
+ * The Status enumeration.
+ */
 public enum Status {
     D("Deleted"), A("Available");
 

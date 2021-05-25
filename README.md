@@ -67,7 +67,7 @@ Please Follow below steps to run the project.
 #### SUPPORT:
 
 Sulakkhana Dissanayake - sulakkanaid@gmail.com
-Project Link: https://github.com/sula92/User-Management-System-In-SpringBoot
+Project Link: https://github.com/sula92/Product-Management-System
 
 #### Copyright:
 
